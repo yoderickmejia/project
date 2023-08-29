@@ -1,0 +1,195 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+#texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+    
+}
+@keyframes myAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+.textos{
+    
+    opacity: 0;
+    animation:  myAnimation  2s ease-in-out infinite;
+    color:rgba(255, 255, 255,0.50 );
+    font-size: 7em;
+  
+}
+
+
+
+body{
+    font-family: 'Poppins';
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/landscape.jpg");
+    background-size: cover;
+}
+
+.navbar{
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+.navbar .logo{
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    font-size: 1.5em;
+}
+
+.navbar .nav-links ul li  {
+    margin: 0 25px;
+}
+
+
+ #active{
+    color: #ed3c57;
+    font-weight: 600;
+}
+
+
+
+ button {
+    
+    display: none;
+    position:  absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+    height: 30px;
+
+}
+#klk{
+    display: none;
+}
+
+.menu-hamburger{
+    display: none;
+    position:  absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 2;
+    width: 35px;
+}
+
+
+.navbar .logo{
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+li:hover{
+    color: #ed3c57;
+}
+
+@media screen and (max-width: 900px) { 
+    li:hover{
+        color: #ed3c57;
+    }
+    
+
+    .navbar  .logo{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+
+    }
+    
+    .textos{
+    display: block;
+        opacity: 0;
+        animation:  myAnimation  2s ease-in-out infinite;
+        color:rgba(255, 255, 255,0.50);
+        font-size: 4em;
+        
+       
+      
+    }
+
+    .color{
+        display: none;
+
+    }
+    
+    .nav-links{
+        padding: 0;
+    }
+    .menu-hamburger{
+        display: block;
+ z-index: 1;
+
+    }
+    #klk{
+        display: block;
+
+    }
+    
+    button{
+        display: block;
+        background: none;
+       z-index: 2;
+        border: none;
+        
+    }
+    .nav-links{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255,0.20 );
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+         transition: all 0.5s ease;
+       
+    
+    }
+      .mobile-menu{
+        
+        margin-left: 0;
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar .nav-links ul li{
+        margin: 25px 0;
+        font-size: 1.3em
+    };
+
+
+    
+}
