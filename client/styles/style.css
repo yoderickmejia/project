@@ -20,6 +20,11 @@ body{
     box-shadow: 5px 20px 50px #000;
  
 }
+a{
+    margin-bottom: 30%;
+    margin-left: 10%;
+    color: #000;
+    }
 
 
 #chk {
@@ -104,3 +109,78 @@ button:hover{
 #chk:checked ~ .signup{
  transform: scale(.6);
 }
+
+
+@media (min-width: 1100px){
+    .main{
+        width: 600px;
+        height: 750px;
+        background: red;
+        overflow: hidden;
+        background: url("../images/landscape.jpg") no-repeat center / cover;
+        border-radius: 10px;
+        box-shadow: 5px 20px 50px #000;
+     
+    }
+    label{
+        color: #fff;
+        font-size: 4.3em;
+        display: flex;
+        justify-content: center;
+        margin: 60px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .5s ease-in-out;
+    }
+    input{
+        width: 70%;
+        height: 30px;
+        background: #e0dede ;
+        justify-content: center;
+        display: flex;
+        margin: 30px auto;
+        padding: 10px;
+        border: none;
+        outline: none;
+    }
+    button{
+        width: 60%;
+        height: 50px;
+        margin: 30px auto;
+        justify-content: center;
+        display: block;
+        color: #fff;
+        background: #573b8a;
+        font-size: 2em;
+        font-weight: bold;
+        margin-top: 60px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        transition: .2s ease-in;
+        cursor: pointer;
+    }
+    .login{
+        height: 650px;
+        background: #eee ;
+        border-radius: 60%/10%;
+        transform: translateY(-230px);
+        transition: .4s  ease-in-out;
+    }
+    #chk:checked ~ .login{
+        transform: translateY(-700px);
+    }
+    
+    
+    
+
+}
+
+
+
+
+
+
+
+
+
