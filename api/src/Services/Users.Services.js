@@ -23,6 +23,18 @@ export const getUsers = () => {
     });
   };
 
+   export const comprueba = (Nombre) => {
+    return new Promise((resolve, reject) => {
+      const query = "SELECT count(*)  AS Login FROM usuario WHERE Email = ? ";
+
+      
+
+      db.query(query,[Nombre])
+        .then((result) => resolve(result))
+        .catch((err) => reject(err));
+    });
+  };
+
   export const SingUp = (Nombre,Email,Pass) => {
     return new Promise((resolve, reject) => {
       const query = "INSERT INTO usuario (Nombre, Email, pass)VALUES (?,?,?)";

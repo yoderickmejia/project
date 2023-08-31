@@ -32,6 +32,25 @@ export const getUsers = (req, res) => {
       });
   };
 
+  export const comprueba = (req, res) => {
+  
+    let  Nombre  = req.body.Nombre; 
+
+    // Verificar si Nombre y Pass están presentes y no son cadenas vacías
+    console.log (Nombre);
+    UsersServices.comprueba(Nombre)
+      .then((result) => {
+        res.status(200).json({
+          data: result[0],
+        });
+      })
+      .catch((err) => {
+        res.status(500).send(err);
+        console.log(err);
+      });
+  };
+
+
   export const SingUp = (req, res) => {
   
     let  Nombre  = req.body.Nombre; 
