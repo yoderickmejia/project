@@ -1,5 +1,4 @@
 
-
 function mifuncion() {
 
  // Por ejemplo, mostrarlos en la consola:
