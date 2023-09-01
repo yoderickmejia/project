@@ -26,7 +26,7 @@ function mifuncion() {
 
 
    if (data.data[0].Login=="1"){
-    location.href = "http://127.0.0.1:5500/client/pages/home.html"
+ //  location.href = "http://127.0.0.1:5500/client/pages/home.html"
    }else{
     alert(" USUARIO O CONTRASEÑA INCORRECTA");
    }

@@ -23,13 +23,13 @@ export const getUsers = () => {
     });
   };
 
-   export const comprueba = (Nombre) => {
+   export const comprueba = (Email) => {
     return new Promise((resolve, reject) => {
       const query = "SELECT count(*)  AS Login FROM usuario WHERE Email = ? ";
 
       
 
-      db.query(query,[Nombre])
+      db.query(query,[Email])
         .then((result) => resolve(result))
         .catch((err) => reject(err));
     });

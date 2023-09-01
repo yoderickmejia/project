@@ -20,8 +20,13 @@ console.log(Nombre +"     " +Pass)
   })
   .then(response => response.json())
   .then(data => {
-    console.log("Respuesta de la API:", data);
-  
+    console.log("Respuesta de la AP:", data.data[0].Login);
+    if (data.data[0].Login ===1){
+      console.log(" este mail ya tiene una cuenta");
+   
+    }else{
+    mifuncion1(Nombre,Email,Pass)
+    }
    
     // Aquí puedes hacer algo con la respuesta de la API, si es necesario
   })
@@ -30,12 +35,7 @@ console.log(Nombre +"     " +Pass)
  
   });
 
-  if (data.data[0].Login ==="1"){
-    
-    mifuncion1(Nombre,Email,Pass);
-   }else{
-    console.log(" este mail ya tiene una cuenta");
-   }
+
 
 }
 
@@ -54,8 +54,7 @@ function mifuncion1( Nombre, Email , Pass) {
    
    
    
-      
-   
+  
       // Aquí puedes hacer algo con la respuesta de la API, si es necesario
     })
     .catch(error => {

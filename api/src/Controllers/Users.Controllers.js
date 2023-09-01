@@ -34,11 +34,11 @@ export const getUsers = (req, res) => {
 
   export const comprueba = (req, res) => {
   
-    let  Nombre  = req.body.Nombre; 
+    let  Email  = req.body.Email; 
 
     // Verificar si Nombre y Pass están presentes y no son cadenas vacías
-    console.log (Nombre);
-    UsersServices.comprueba(Nombre)
+    console.log (Email);
+    UsersServices.comprueba(Email)
       .then((result) => {
         res.status(200).json({
           data: result[0],

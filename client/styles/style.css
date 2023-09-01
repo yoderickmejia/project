@@ -113,8 +113,8 @@ button:hover{
 
 @media (min-width: 1100px){
     .main{
-        width: 600px;
-        height: 750px;
+        width: 500px;
+        height: 650px;
         background: red;
         overflow: hidden;
         background: url("../images/landscape.jpg") no-repeat center / cover;
