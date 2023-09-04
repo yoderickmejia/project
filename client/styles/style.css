@@ -117,7 +117,7 @@ button:hover{
     background-color: #fff;
     border-radius: 5px;
     z-index: 5;
-  
+  display: none;
 
 }
 #button{

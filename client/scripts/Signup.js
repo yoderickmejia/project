@@ -23,7 +23,10 @@ console.log(Nombre +"     " +Pass)
     console.log("Respuesta de la AP:", data.data[0].Login);
     if (data.data[0].Login ===1){
       console.log(" este mail ya tiene una cuenta");
-   
+      const error = document.getElementById("alerta");
+      error.style.display = "flex";
+      
+      
     }else{
     mifuncion1(Nombre,Email,Pass)
     }
