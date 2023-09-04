@@ -1,8 +1,6 @@
 
 function mifuncion() {
 
- // Por ejemplo, mostrarlos en la consola:
-
  const n1= document.getElementById("username");
  const n2= document.getElementById("password");
  
