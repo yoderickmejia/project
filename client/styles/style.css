@@ -114,11 +114,11 @@ button:hover{
 
 #alerta{
     
-    height: 200px;
-    width: 400px;
+    height: 60vh;
+    width: 60vw;
     background-color: #fff;
     border-radius: 5px;
-    z-index: 5;
+    z-index: 20;
   display: none;
 
 }
@@ -129,7 +129,7 @@ button:hover{
  width: 50% ; 
 }
 
-/*
+
 @media (min-width: 1100px){
     .main{
         width: 500px;

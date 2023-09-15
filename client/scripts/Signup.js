@@ -24,7 +24,13 @@ console.log(Nombre +"     " +Pass)
     if (data.data[0].Login ===1){
       console.log(" este mail ya tiene una cuenta");
       const error = document.getElementById("alerta");
+    
       error.style.display = "flex";
+      error.classList.add("animate__animated  animate__zoomIn");
+      const h3 = document.getElementById("h3");
+      
+      h3.textContent = "Este Correo ya tiene una cuenta";
+
       
       
     }else{
