@@ -1,6 +1,6 @@
 
 import express from "express";
-import indexRouter from "./routes/routes.js";
+import indexRouter from "./Routes/routes";
 import db  from "./Database/db.js";
 const app = express();
 import bodyParser from "body-parser";
