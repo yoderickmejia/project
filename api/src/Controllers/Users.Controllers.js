@@ -71,3 +71,34 @@ export const getUsers = (req, res) => {
       });
   };
   
+
+  export const Wilson = (req, res) => {
+   
+let Nombre = req.body.Nombre;
+let Correo = req.body.Correo;
+let Pais = req.body.Pais;
+let Contraseña = req.body.Contraseña;
+let Genero = req.body.Genero;
+let Suscribirse = req.body.Suscribirse;
+let Comentarios = req.body.Comentarios;
+
+
+    // Verificar si los campos obligatorios están presentes y no son cadenas vacías
+    if (!Nombre || !Correo || !Pais || !Contraseña|| !Genero || !Suscribirse|| !Comentarios) {
+      return res.status(400).json({ error: 'Todos los campos son obligatorios' });
+    }
+  
+    UsersServices.WILSON(Nombre, Correo, Pais, Contraseña, Genero, Suscribirse,Comentarios)
+      .then(() => {
+        res.status(200).json({
+          data: {
+            Nombre, Correo, Pais, Contraseña, Genero, Suscribirse,Comentarios
+          }
+        });
+      })
+      .catch((err) => {
+        res.status(500).json({ error: 'Error en el servidor' });
+        console.error(err);
+      });
+  };
+  

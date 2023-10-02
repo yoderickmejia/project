@@ -46,6 +46,15 @@ export const getUsers = () => {
         .catch((err) => reject(err));
     });
   };
-
+  export const WILSON = (Nombre, Correo, Pais, Contraseña, Genero, Suscribirse,Comentarios) => {
+    return new Promise((resolve, reject) => {
+      const query = "INSERT INTO Tarea (Nombre, Correo, Pais, Contraseña, Genero, Suscribirse,Comentarios) VALUES (?, ?, ?, ?, ?, ?, ?)";
+  
+      db.query(query, [Nombre, Correo, Pais, Contraseña, Genero, Suscribirse,Comentarios])
+        .then((result) => resolve(result))
+        .catch((err) => reject(err));
+    });
+  };
+  
   
 
