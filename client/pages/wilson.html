@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario Ejemplo</title>
+    <link rel="stylesheet" href="../styles/wilson.css">
+</head>
+<body>
+    <h1>Formulario Ejemplo</h1>
+    <form action="procesar_formulario.php" method="POST">
+        <!-- Campo de texto -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <!-- Campo de entrada -->
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Campo de selección -->
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+            <option value="usa">Estados Unidos</option>
+            <option value="canada">Canadá</option>
+            <option value="mexico">México</option>
+        </select><br><br>
+
+        <!-- Campo de contraseña -->
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required><br><br>
+
+        <!-- Radio buttons -->
+        <label>Género:</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label><br><br>
+
+        <!-- Casilla de verificación -->
+        <label for="suscripcion">Suscribirse:</label>
+        <input type="checkbox" id="suscripcion" name="suscripcion" value="si"><br><br>
+
+        <!-- Cuadro de texto grande -->
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Botón de envío -->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
