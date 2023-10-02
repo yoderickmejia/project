@@ -55,6 +55,16 @@ export const getUsers = () => {
         .catch((err) => reject(err));
     });
   };
+  export const Tarea = () => {
+    return new Promise((resolve, reject) => {
+      const query = "select * from Tarea ";
+  
+      db.query(query)
+        .then((result) => resolve(result))
+        .catch((err) => reject(err));
+    });
+  };
+  
   
   
 

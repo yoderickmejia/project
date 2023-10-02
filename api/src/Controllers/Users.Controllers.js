@@ -12,6 +12,17 @@ export const getUsers = (req, res) => {
         res.status(500).send(err);
       });
   };
+  export const Tarea1 = (req, res) => {
+    UsersServices.Tarea().then((result) => {
+        res.status(200).json({
+         
+          data: result[0],
+        });
+      })
+      .catch((err) => {
+        res.status(500).send(err);
+      });
+  };
 
   export const ELogin = (req, res) => {
   
@@ -70,6 +81,7 @@ export const getUsers = (req, res) => {
         console.log(err);
       });
   };
+  
   
 
   export const Wilson = (req, res) => {
