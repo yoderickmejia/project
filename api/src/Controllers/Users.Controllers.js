@@ -106,7 +106,9 @@ let Comentarios = req.body.Comentarios;
           data: {
             Nombre, Correo, Pais, Contraseña, Genero, Suscribirse,Comentarios
           }
+        
         });
+        console.log("klk")
       })
       .catch((err) => {
         res.status(500).json({ error: 'Error en el servidor' });

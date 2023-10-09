@@ -12,7 +12,7 @@ UserRouter.post("/login",ELogin);
 UserRouter.post("/SignUp",SingUp);
 
 UserRouter.post("/comprueba",comprueba)
-UserRouter.post("/wilson",Wilson)
+UserRouter.post("/Tarea1",Wilson)
 UserRouter.get("/Tarea",Tarea1)
 
 
